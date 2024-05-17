@@ -1,9 +1,6 @@
-p{
-    font-size: larger;
-}
-
 .arrow{
     position: fixed;
     right: 0;
     bottom: 0;
+    margin: 0em 1em 1em;
 }

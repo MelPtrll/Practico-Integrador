@@ -1,0 +1,39 @@
+.contacto {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+  }
+  
+  .contacto h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contacto .form-label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .contacto .form-control {
+    border-radius: 4px;
+  }
+  
+  .contacto .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contacto .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

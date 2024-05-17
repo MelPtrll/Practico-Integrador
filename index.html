@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/MAIN/CSS/Index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <!-- Archivos CSS Específicos -->
+    <link rel="stylesheet" href="/MAIN/CSS/Style.css"> <!-- link a archivo CSS general -->
+    <link rel="stylesheet" href="/MAIN/CSS/Header.css"> <!-- link a archivo CSS específico del header -->
+    <link rel="stylesheet" href="/MAIN/CSS/Carrusel.css"> <!-- link a archivo CSS específico del carrusel -->
+    <link rel="stylesheet" href="/MAIN/CSS/Catálogo.css"> <!-- link a archivo CSS de productos destacados -->
+    <link rel="stylesheet" href="/MAIN/CSS/Contacto.css">  <!-- link al archivo CSS de contacto -->
+    <link rel="stylesheet" href="/MAIN/CSS/Inicio-de-sesión.css">  <!-- link al archivo CSS de login -->
+    <script src="/MAIN/JS/Productos.js" defer></script> <!-- link a archivo JS general -->
+    <script src="/MAIN/JS/Carrusel.js" defer></script> <!-- link a archivo JS específico del carrusel -->
+    <script src="/MAIN/JS/Footer.js" defer></script> <!-- link al archivo JS del footer -->
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/MAIN/HTML/index.html">
+            <img src="/MAIN/Icons/logo.jpg" alt="Logo" class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="busqueda.html"><i class="bi bi-search"></i></a> <!-- Icono de búsqueda -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/MAIN/HTML/Inicio-de-sesión.html"><i class="bi bi-person-fill"></i></a> <!-- Icono de iniciar sesión -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/MAIN/HTML/Catálogo.html"><i class="bi bi-cart-fill"></i></a> <!-- Icono de carrito -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-justify"></i></a> <!-- Icono de opciones -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <a href="#navbar"><svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 64 64"><path fill="currentColor" d="M32 2C15.432 2 2 15.432 2 32s13.432 30 30 30s30-13.432 30-30S48.568 2 32 2m5.143 28.305V49H26.857V30.305H16L32 15l16 15.305z"/></svg></a>
+    
+      <div class="carousel-container carrusel">
+        <!-- Carrusel de Imágenes -->
+        <div class="slides">
+          <div class="slide active">
+            <img src="/MAIN/Icons/imagen1.jpg" alt="Imagen 1">
+          </div>
+          <div class="slide">
+            <img src="/MAIN/Icons/imagen2.jpg" alt="Imagen 2">
+          </div>
+          <div class="slide">
+            <img src="/MAIN/Icons/imagen3.jpg" alt="Imagen 3">
+          </div>
+          <div class="slide">
+            <img src="/MAIN/Icons/imagen4.jpg" alt="Imagen 4">
+          </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    
+      <!-- Productos Destacados -->
+      <section class="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <div class="categorias">
+          <button class="categoria-btn" onclick="mostrarCategoria('destacados')">Destacados</button>
+          <button class="categoria-btn" onclick="mostrarCategoria('celulares')">Celulares</button>
+          <button class="categoria-btn" onclick="mostrarCategoria('electrodomesticos')">Electrodomésticos</button>
+          <button class="categoria-btn" onclick="mostrarCategoria('gaming')">Gaming</button>
+        </div>
+        <div class="productos" id="destacados">
+          <div class="producto">
+            <img src="/MAIN/Icons/zflip.png" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Descripción del producto 1.</p>
+          </div>
+          <div class="producto">
+            <img src="/MAIN/Icons/heladera2.png" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Descripción del producto 2.</p>
+          </div>
+          <div class="producto">
+            <img src="/MAIN/Icons/monitor3.png" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>Descripción del producto 3.</p>
+          </div>
+        </div>
+        <div class="productos" id="celulares" style="display: none;">
+          <div class="producto">
+            <img src="/MAIN/Icons/Galaxy S23.png" alt="Celular 1">
+            <h3>Celular 1</h3>
+            <p>Descripción del celular 1.</p>
+          </div>
+          <div class="producto">
+            <img src="/MAIN/Icons/a34.png" alt="Celular 2">
+            <h3>Celular 2</h3>
+            <p>Descripción del celular 2.</p>
+          </div>
+          <div class="producto">
+            <img src="/MAIN/Icons/zflip.png" alt="Celular 3">
+            <h3>Celular 3</h3>
+            <p>Descripción del celular 3.</p>
+          </div>
+        </div>
+        <div class="productos" id="electrodomesticos" style="display: none;">
+          <div class="producto">
+            <img src="/MAIN/Icons/heladera1.png" alt="Electrodoméstico 1">
+            <h3>Electrodoméstico 1</h3>
+            <p>Descripción del electrodoméstico 1.</p>
+          </div>
+          <div class="producto">
+            <img src="/MAIN/Icons/heladera2.png" alt="Electrodoméstico 2">
+            <h3>Electrodoméstico 2</h3>
+            <p>Descripción del electrodoméstico 2.</p>
+          </div>
+          <div class="producto">
+            <img src="/MAIN/Icons/lavarropa1.png" alt="Electrodoméstico 3">
+            <h3>Electrodoméstico 3</h3>
+            <p>Descripción del electrodoméstico 3.</p>
+          </div>
+        </div>
+        <div class="productos" id="gaming" style="display: none;">
+          <div class="producto">
+            <img src="/MAIN/Icons/monitor1.png" alt="Gaming 1">
+            <h3>Gaming 1</h3>
+            <p>Descripción del gaming 1.</p>
+          </div>
+          <div class="producto">
+            <img src="/MAIN/Icons/monitor2.png" alt="Gaming 2">
+            <h3>Gaming 2</h3>
+            <p>Descripción del gaming 2.</p>
+          </div>
+          <div class="producto">
+            <img src="/MAIN/Icons/monitor3.png" alt="Gaming 3">
+            <h3>Gaming 3</h3>
+            <p>Descripción del gaming 3.</p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Sección de Contacto -->
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+    
+    
+     <!-- Footer -->
+    <footer>
+      <div class="container p-4">
+        <div class="row">
+          <!-- Sección de Explora -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Explora</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#!" class="text-dark">Inicio</a></li>
+              <li><a href="#!" class="text-dark">Productos</a></li>
+              <li><a href="#!" class="text-dark">Contacto</a></li>
+              <li><a href="#!" class="text-dark">Acerca de</a></li>
+            </ul>
+          </div>
+    
+          <!-- Sección de Soporte -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Soporte</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#!" class="text-dark">Chat Online</a></li>
+              <li><a href="#!" class="text-dark">Contacto</a></li>
+              <li><a href="#!" class="text-dark">Aviso Legal</a></li>
+            </ul>
+          </div>
+          <!-- Sección de Redes Sociales -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Redes Sociales</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="https://www.facebook.com/" target="_blank" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
+              <li><a href="https://twitter.com/" target="_blank" class="text-dark"><i class="bi bi-twitter"></i> Twitter</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
+            </ul>
+          </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Pie de página -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        &copy; <span class="current-year">2024</span> Proyecto codo. Todos los derechos reservados.
+      </div>
+    </footer>
+    
+      <!-- Enlaces de JavaScript de Bootstrap al final para optimización de carga -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+x5jdYdMB9coLJ8H5SSl5e5y+E0i5eX3C3e2D+1HwW34T4xa/3mp25F8+vcTf5" crossorigin="anonymous"></script>
+</body>
+</html>
