@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/MAIN/CSS/Registro.css">
-    <script src="/MAIN/JS/Registro.js"></script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Registro</title>
      <!-- Bootstrap Icons -->
@@ -13,12 +13,13 @@
        <link rel="stylesheet" href="/MAIN/CSS/Style.css"> <!-- link a archivo CSS general -->
        <link rel="stylesheet" href="/MAIN/CSS/Header.css"> <!-- link a archivo CSS específico del header -->
        <script src="/MAIN/JS/Footer.js" defer></script> <!-- link al archivo JS del footer -->
+       <script src="/MAIN/JS/Registro.js"></script>
 </head>
 <body>
     <header class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <div class="container">
-          <a class="navbar-brand" href="/MAIN/HTML/index.html">
-            <img src="/MAIN/Icons/logo.jpg" alt="Logo" class="logo">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/MAIN/Icons/logo.png" alt="Logo" class="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -81,20 +82,27 @@
             </div>  
             
             <div class="form-group">
-                <input type="checkbox" value="terminos" class="check form-check-input" id="terminos">
-                <label for="terminos" class="check" >Acepto <a href="">términos y condiciones</a> </label>
+              <input type="checkbox" value="terminos" class="check form-check-input" id="terminos">
+              <label for="terminos" class="check" >Acepto <button type="button" id="open">términos y condiciones</button></label> 
+            </div> 
+
+            
+
+            <div class="modal-container" id="modal_container">
+              <div class="modale">
+                  <h2>Términos y condiciones</h1>
+                  
+                  <p>Esta página web es propiedad y está operado por [nombre del titular de la página web]. Estos Términos establecen los términos y condiciones bajo los cuales puedes usar nuestra página web y nuestros servicios. Esta página web ofrece a los visitantes [descripción de lo que se ofrece en la web]. Al acceder o usar la página web, aceptas haber leído, entendido y aceptado estar sujeto a estos términos.</p>
+                  
+                  <h4>INFORMACIÓN RELEVANTE</h5>
+                  
+                  <p>En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña. El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para el uso de alguno de nuestros servicios. [El titular de la página web] no asume la responsabilidad en caso de que entregue dicha clave a terceros.</p>
+      
+                  <button type="button" id="close" class="btn btn-danger">Cerrar</button>
+              </div>
             </div>
 
-            <dialog id="modal">
-                <h1>Términos y condiciones</h1>
-                <p>Esta página web es propiedad y está operado por [nombre del titular de la página web]. Estos Términos establecen los términos y condiciones bajo los cuales puedes usar nuestra página web y nuestros servicios. Esta página web ofrece a los visitantes [descripción de lo que se ofrece en la web]. Al acceder o usar la página web, aceptas haber leído, entendido y aceptado estar sujeto a estos términos.</p>
-                    
-                <h5>INFORMACIÓN RELEVANTE</h5>
-                    
-                <p>En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña. El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario para el uso de alguno de nuestros servicios. [El titular de la página web] no asume la responsabilidad en caso de que entregue dicha clave a terceros.</p>
-
-                <button type="button" id="btn-cerrar-modal" class="btn btn-danger">Cerrar</button>
-            </dialog>
+            <script src="/MAIN/JS/Registro.js"></script>
 
             <div class="form-group">
                 <input type="submit" value="REGISTRARSE" class="btn btn-success form-control">
@@ -107,41 +115,40 @@
             </form>
     <!-- Footer -->
     <footer>
-        <div class="container p-4">
+      <div class="container p-4">
         <div class="row">
-            <!-- Sección de Explora -->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <!-- Sección de Explora -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Explora</h5>
             <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="text-dark">Inicio</a></li>
-                <li><a href="#!" class="text-dark">Productos</a></li>
-                <li><a href="#!" class="text-dark">Contacto</a></li>
-                <li><a href="#!" class="text-dark">Acerca de</a></li>
+              <li><a href="/index.html" class="text-dark">Inicio</a></li>
+              <li><a href="/MAIN/HTML/Catálogo.html" class="text-dark">Catálogo</a></li>
+              <li><a href="/MAIN/HTML/Contacto.html" class="text-dark">Contacto</a></li>
             </ul>
-            </div>
+          </div>
     
-            <!-- Sección de Soporte -->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <!-- Sección de Soporte -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Soporte</h5>
             <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="text-dark">Chat Online</a></li>
-                <li><a href="#!" class="text-dark">Contacto</a></li>
-                <li><a href="#!" class="text-dark">Aviso Legal</a></li>
+              <li><a href="#!" class="text-dark">Chat Online</a></li>
+              <li><a href="#!" class="text-dark">Contacto</a></li>
+              <li><a href="#!" class="text-dark">Aviso Legal</a></li>
             </ul>
-            </div>
-            <!-- Sección de Redes Sociales -->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          </div>
+          <!-- Sección de Redes Sociales -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Redes Sociales</h5>
             <ul class="list-unstyled mb-0">
-                <li><a href="https://www.facebook.com/" target="_blank" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
-                <li><a href="https://twitter.com/" target="_blank" class="text-dark"><i class="bi bi-twitter"></i> Twitter</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a href="https://www.facebook.com/" target="_blank" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
+              <li><a href="https://twitter.com/" target="_blank" class="text-dark"><i class="bi bi-twitter"></i> Twitter</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
             </ul>
-            </div>
+          </div>
             </ul>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
         <!-- Pie de página -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         &copy; <span class="current-year">2024</span> Proyecto codo. Todos los derechos reservados.

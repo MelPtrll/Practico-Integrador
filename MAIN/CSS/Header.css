@@ -1,6 +1,6 @@
 /* Estilos del Header */
 header {
-    padding: 10px 0;
+    padding: 0;
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -8,7 +8,8 @@ header {
   }
 
   .logo {
-    max-height: 150px; /* Ajusta la altura máxima del logo */
+    max-height: 100px; /* Ajusta la altura máxima del logo */
+    max-width: 400px;
     width: auto; /* Mantiene la relación de aspecto */
   }
 

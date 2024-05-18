@@ -1,27 +1,10 @@
+var open = document.getElementById('open');
+var modal_container = document.getElementById('modal_container');
+var close = document.getElementById('close');
 
-const modal =
-document.querySelector("#modal");
+open.addEventListener ('click', () =>{modal_container.classList.add('show');
+});
 
-const BtnAbrirModal = document.getElementById("btn-abrir-modal");
-const BtnCerrarModal = document.getElementById("btn-cerrar-modal");
-const dialog = document.getElementById("modal");
-dialog.returnValue = "aceptar";
-
-function openCheck(dialog) {
-  if (dialog.open) {
-    console.log("Dialog open");
-  } else {
-    console.log("Dialog closed");
-  }
-}
-
-BtnAbrirModal.addEventListener("click", () => {
-    dialog.showModal();
-    openCheck(dialog);
-  });
-  
-
-  BtnCerrarModal.addEventListener("click", () => {
-    dialog.close();
-    openCheck(dialog);
-  });
+close.addEventListener('click', () => {
+    modal_container.classList.remove('show');
+});
