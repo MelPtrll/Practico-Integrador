@@ -11,6 +11,25 @@ header {
     max-height: 100px; /* Ajusta la altura máxima del logo */
     max-width: 400px;
     width: auto; /* Mantiene la relación de aspecto */
+    padding: 0;
+  }
+
+  .logo2{
+    padding: 0;
+    animation: rotar 5s linear infinite;
+  }
+
+  .logo2:hover{
+    cursor: pointer;
+  }
+
+  @keyframes rotar{
+    from{
+      transform: rotateY(180deg);
+    }
+    to{
+      transform: rotateY(-180deg);
+    }
   }
 
   .navbar-toggler {

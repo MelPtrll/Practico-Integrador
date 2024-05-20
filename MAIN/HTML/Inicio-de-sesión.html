@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/MAIN/Icons/iconamoon--lightning-2.svg">
     <link rel="stylesheet" href="/MAIN/CSS/Inicio-de-sesión.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Inicio de sesión</title>
@@ -16,6 +17,11 @@
 <body>
     <header class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <div class="container">
+          <div class="logo2">
+            <a class="navbar-brand" href="/index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3.5em" viewBox="0 0 24 24"><path fill="none" stroke="#9dc6fb" stroke-linejoin="round" stroke-width="2" d="M11 14H6L9.5 2H16l-3 8h5l-8 12z"/></svg>
+            </a>
+          </div>
           <a class="navbar-brand" href="/index.html">
             <img src="/MAIN/Icons/logo.png" alt="Logo" class="logo">
           </a>
@@ -34,7 +40,7 @@
                 <a class="nav-link" href="/MAIN/HTML/Catálogo.html"><i class="bi bi-cart-fill"></i></a> <!-- Icono de carrito -->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-justify"></i></a> <!-- Icono de opciones -->
+                <a class="nav-link" href="/MAIN/HTML/Sobre-nosotros.html"><i class="bi  bi-info-circle"></i></a> <!-- Icono de opciones -->
               </li>
             </ul>
           </div>
@@ -71,48 +77,61 @@
             </div>
         </form>
     </main>
+<!-- Footer -->
+<footer>
+  <div class="container p-4">
+    <div class="row">
+      <!-- Sección de Explora -->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Explora</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="/index.html" class="text">Inicio</a></li>
+          <li><a href="/MAIN/HTML/Catálogo.html" class="text">Catálogo</a></li>
+        </ul>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container p-4">
-        <div class="row">
-          <!-- Sección de Explora -->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Explora</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="/index.html" class="text-dark">Inicio</a></li>
-              <li><a href="/MAIN/HTML/Catálogo.html" class="text-dark">Catálogo</a></li>
-              <li><a href="/MAIN/HTML/Contacto.html" class="text-dark">Contacto</a></li>
-            </ul>
-          </div>
-    
-          <!-- Sección de Soporte -->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Soporte</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="text-dark">Chat Online</a></li>
-              <li><a href="#!" class="text-dark">Contacto</a></li>
-              <li><a href="#!" class="text-dark">Aviso Legal</a></li>
-            </ul>
-          </div>
-          <!-- Sección de Redes Sociales -->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Redes Sociales</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="https://www.facebook.com/" target="_blank" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
-              <li><a href="https://twitter.com/" target="_blank" class="text-dark"><i class="bi bi-twitter"></i> Twitter</a></li>
-              <li><a href="https://www.instagram.com/" target="_blank" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
-            </ul>
-          </div>
-            </ul>
-          </div>
+      <!-- Sección de Soporte -->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Soporte</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="/MAIN/HTML/Sobre-nosotros.html" class="text">Sobre nosotros</a></li>
+          <li><a href="/index.html#contacto" class="text">Contacto</a></li>
+          <li><button type="button" id="open">Aviso Legal</button></li>
+        </ul>
+      </div>
+
+      <div class="modal-container" id="modal_container">
+        <div class="modale">
+            <h2 class="aviso">Aviso Legal</h1>
+            
+            <p  class="aviso">La utilización del sitio Web le otorga la condición de Usuario, e implica la aceptación completa de todas las cláusulas y condiciones de uso incluidas. Si no estuviera conforme con todas y cada una de estas cláusulas y condiciones absténgase de utilizar este sitio Web.
+            El acceso a este sitio Web no supone, en modo alguno, el inicio de una relación comercial con el Titular. A través de este sitio Web, el Titular le facilita el acceso y la utilización de diversos contenidos que el Titular o sus colaboradores han publicadon por medio de Internet. A tal efecto, usted está obligado y comprometido a NO utilizar cualquiera de los contenidos del sitio Web con fines o efectos ilícitos, prohibidos en este Aviso Legal o por la legislación vigente.</p>
+            
+            <h4  class="aviso">Contacto</h5>
+            
+            <p  class="aviso">En caso de que usted tenga cualquier duda acerca de estas Condiciones legales o quiera realizar cualquier comentario sobre este sitio Web, puede enviar un mensaje de correo electrónico a la dirección zeltaproductos@gmail.com.</p>
+            <button type="button" id="close" class="btn btn-danger">Cerrar</button>
         </div>
       </div>
-        <!-- Pie de página -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          &copy; <span class="current-year">2024</span> Proyecto codo. Todos los derechos reservados.
-        </div>
-      </footer>
+
+      <!-- Sección de Redes Sociales -->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Redes Sociales</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="https://www.facebook.com/" target="_blank" class="text"><i class="bi bi-facebook"></i> Facebook</a></li>
+          <li><a href="https://twitter.com/" target="_blank" class="text"><i class="bi bi-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" class="text"><i class="bi bi-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Pie de página -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    &copy; <span class="current-year">2024</span> Proyecto codo. Todos los derechos reservados.
+  </div>
+</footer>
       
         <!-- Enlaces de JavaScript de Bootstrap al final para optimización de carga -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+x5jdYdMB9coLJ8H5SSl5e5y+E0i5eX3C3e2D+1HwW34T4xa/3mp25F8+vcTf5" crossorigin="anonymous"></script>
