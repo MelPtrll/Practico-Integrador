@@ -1,3 +1,25 @@
+@media only screen and (min-width: 768rem) {
+  /* Estilos para tablet */
+  #navbar {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024rem) {
+  /* Estilos para PC escritorio */
+  #navbar {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 320rem) {
+  /* Estilos para celular */
+  #navbar {
+    width: 100%;
+    padding: 0.625rem;
+  }
+}
+
 /* Estilos del Header */
 header {
     padding: 0;
