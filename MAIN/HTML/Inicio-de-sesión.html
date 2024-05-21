@@ -13,37 +13,43 @@
        <link rel="stylesheet" href="/MAIN/CSS/Style.css"> <!-- link a archivo CSS general -->
        <link rel="stylesheet" href="/MAIN/CSS/Header.css"> <!-- link a archivo CSS específico del header -->
        <script src="/MAIN/JS/Footer.js" defer></script> <!-- link al archivo JS del footer -->
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!-- Agrega jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <header class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <div class="container">
-          <div class="logo2">
+            <div class="logo2">
+                <a class="navbar-brand" href="/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3.5em" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#9dc6fb" stroke-linejoin="round" stroke-width="2" d="M11 14H6L9.5 2H16l-3 8h5l-8 12z"/>
+                    </svg>
+                </a>
+            </div>
             <a class="navbar-brand" href="/index.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3.5em" viewBox="0 0 24 24"><path fill="none" stroke="#9dc6fb" stroke-linejoin="round" stroke-width="2" d="M11 14H6L9.5 2H16l-3 8h5l-8 12z"/></svg>
+                <img src="/MAIN/Icons/logo.png" alt="Logo" class="logo">
             </a>
-          </div>
-          <a class="navbar-brand" href="/index.html">
-            <img src="/MAIN/Icons/logo.png" alt="Logo" class="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="busqueda.html"><i class="bi bi-search"></i></a> <!-- Icono de búsqueda -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/MAIN/HTML/Inicio-de-sesión.html"><i class="bi bi-person-fill"></i></a> <!-- Icono de iniciar sesión -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/MAIN/HTML/Catálogo.html"><i class="bi bi-cart-fill"></i></a> <!-- Icono de carrito -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/MAIN/HTML/Sobre-nosotros.html"><i class="bi  bi-info-circle"></i></a> <!-- Icono de opciones -->
-              </li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="busqueda.html"><i class="bi bi-search"></i></a> <!-- Icono de búsqueda -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MAIN/HTML/Inicio-de-sesión.html"><i class="bi bi-person-fill"></i></a> <!-- Icono de iniciar sesión -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MAIN/HTML/Catálogo.html"><i class="bi bi-cart-fill"></i></a> <!-- Icono de carrito -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MAIN/HTML/Sobre-nosotros.html"><i class="bi  bi-info-circle"></i></a> <!-- Icono de opciones -->
+                    </li>
+                </ul>
+            </div>
         </div>
       </header>
 
