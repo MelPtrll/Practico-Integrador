@@ -104,12 +104,12 @@ form {
     font-weight: bold;
   }
 
-  #close{
+  #close2{
     display: block;
     margin: 25px auto;
   }
 
-  .modal-container
+  .modal-container2
   {
     display: flex;
     background-color: #27527575;
@@ -124,12 +124,12 @@ form {
     opacity: 0;
   }
 
-  .show{
+  .show2{
     pointer-events: auto;
     opacity: 1;
   }
 
-  .modale{
+  .modale2{
     background-color: #ffffff;
     height: 900px;
     max-height: 90% ;
