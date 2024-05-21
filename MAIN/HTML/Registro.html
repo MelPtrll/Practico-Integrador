@@ -15,6 +15,7 @@
        <link rel="stylesheet" href="/MAIN/CSS/Header.css"> <!-- link a archivo CSS específico del header -->
        <script src="/MAIN/JS/Footer.js" defer></script> <!-- link al archivo JS del footer -->
        <script src="/MAIN/JS/Registro.js"></script>
+       <script src="/MAIN/JS/Validacion-registro.js"></script>
 </head>
 <body>
     <header class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
@@ -51,7 +52,7 @@
 
     <main>
         <h1 >REGISTRATE</h1>
-         <form action="" class="form">
+         <form class="form" id="form">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" class="form-control">
@@ -88,7 +89,7 @@
             </div>  
             
             <div class="form-group">
-              <input type="checkbox" value="terminos" class="check form-check-input" id="terminos">
+              <input type="checkbox" value="terminos" class="check form-check-input" id="terminos" required>
               <label for="terminos" class="check" >Acepto <button type="button" id="open2">términos y condiciones</button></label> 
             </div> 
 
@@ -113,6 +114,8 @@
             <div class="form-group">
                 <input type="submit" value="REGISTRARSE" class="btn btn-success form-control">
             </div>
+
+            <p class="warnings" id="warnings"></p>
 
             <div class="group-login">
             <p>¿Ya tienes una cuenta?</p>

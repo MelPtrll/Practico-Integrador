@@ -147,4 +147,10 @@ form {
     border: 0;
   }
 
-  
+  .warnings{
+    width:100%;
+    text-align: center;
+    margin: auto;
+    color: crimson;
+    padding-top: 10px;
+  }

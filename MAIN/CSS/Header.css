@@ -2,7 +2,9 @@
 
 @media (min-width: 992px) {
   .logo2 {
-      display: none; /* Ocultar el logo pequeño */
+    .bottom_part {
+      display: none; /* Ocultar el contenido adicional, si es necesario */
+  }
   }
 }
 
