@@ -1,18 +1,18 @@
-@media only screen and (min-width: 768rem) {
+@media only screen and (min-width: 768px) {
   /* Estilos para tablet */
   footer {
     width: 80%;
   }
 }
 
-@media only screen and (min-width: 1024rem) {
+@media only screen and (min-width: 1024px) {
   /* Estilos para PC escritorio */
   footer {
     width: 70%;
   }
 }
 
-@media only screen and (min-width: 320rem) {
+@media only screen and (min-width: 320px) {
   /* Estilos para celular */
   footer {
     width: 100%;
