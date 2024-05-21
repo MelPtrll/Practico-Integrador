@@ -7,10 +7,11 @@
 main{
   background: rgb(174,238,222);
   background: radial-gradient(circle, rgba(174,238,222,1) 52%, rgba(32,79,224,1) 100%);
+  padding-bottom: 50px;
 }
 
 form {
-    max-width: 550px;
+    max-width: 400px;
     margin: auto auto 40px auto;
     padding: 20px;
     background-color: #f9f9f9;
