@@ -1,19 +1,16 @@
 @media only screen and (min-width: 768px) {
-  /* Estilos para tablet */
   .form {
     width: 80%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  /* Estilos para PC escritorio */
   .form {
     width: 70%;
   }
 }
 
 @media only screen and (min-width: 320px) {
-  /* Estilos para celular */
   .form {
     width: 80%;
     padding: 0.625rem;
@@ -21,9 +18,6 @@
   }
 }
 
-  /* login.css */
-
-/* Estilos para el formulario de inicio de sesión */
 main{
   background: rgb(174,238,222);
   background: radial-gradient(circle, rgba(174,238,222,1) 23%, rgba(32,79,224,1) 100%);

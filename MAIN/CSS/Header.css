@@ -1,47 +1,45 @@
-/* Media queries */
-
 @media (min-width: 992px) {
   .logo2 {
-    .bottom_part {
-      display: none; /* Ocultar el contenido adicional, si es necesario */
-  }
+      display:block; 
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .logo2 {
-      display: block; /* Mostrar el logo pequeño */
+      display: block;
   }
   .navbar-brand {
-      display: none; /* Ocultar el logo grande */
+      display: none;
   }
 }
 
 @media (max-width: 767px) {
   .logo2 {
-      display: block; /* Mostrar el logo pequeño */
+      display: block;
   }
   .navbar-brand {
-      display: none; /* Ocultar el logo grande */
+      display: none;
   }
-  .bottom_part {
-      display: none; /* Ocultar el contenido adicional, si es necesario */
+  .navbar-nav {
+    display: flexbox;
+    flex-direction: row;
+    max-width: 100%;
   }
 }
 
-/* Estilos del Header */
+
 header {
     padding: 0;
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 1000; /* Asegura que el header esté sobre el carrusel */
+    z-index: 1000;
   }
 
   .logo {
-    max-height: 100px; /* Ajusta la altura máxima del logo */
+    max-height: 100px;
     max-width: 400px;
-    width: auto; /* Mantiene la relación de aspecto */
+    width: auto;
     padding: 0;
   }
 
@@ -84,30 +82,27 @@ header {
     color: #007bff;
   }
 
-  /* Ajustar los iconos para que tengan el mismo tamaño */
   .navbar-nav .nav-link i {
-    font-size: 24px; /* Tamaño uniforme para los iconos */
-    margin-right: 0; /* Remover margen derecho si no es necesario */
+    font-size: 24px;
+    margin-right: 0; 
   }
 
-  /* Alinear los elementos del nav correctamente */
   .navbar-nav {
     display: flex;
     align-items: center;
   }
 
-  /* Ajustar el tamaño del contenedor de iconos */
   .nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Ajustar según sea necesario */
-    height: 50px; /* Ajustar según sea necesario */
+    width: 50px; 
+    height: 50px; 
   }
 
-  /* Añadir un margen superior al carrusel para evitar que el header lo cubra */
+a */
   .carousel-container {
-    margin-top: 100px; /* Ajusta este valor según la altura del header */
+    margin-top: 100px; 
   }
 
     
