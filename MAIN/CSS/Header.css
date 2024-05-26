@@ -18,10 +18,10 @@
       display: block;
   }
   .navbar-brand {
-      display: none;
+      display: block;
   }
   .navbar-nav {
-    display: flexbox;
+    display: flex;
     flex-direction: row;
     max-width: 100%;
   }
